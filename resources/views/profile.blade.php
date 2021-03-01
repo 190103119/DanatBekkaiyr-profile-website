@@ -19,37 +19,37 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
               <a class="nav-item nav-link py-3 px-0 px-lg-3 rounded" href="#" id="home">Home </a>
-              <a class="nav-item nav-link py-3 px-0 px-lg-3 rounded" href="#" id="about-me">About-me</a>
-              <a class="nav-item nav-link py-3 px-0 px-lg-3 rounded" href="#" id="portfolio">Portfolio</a>
-              <a class="nav-item nav-link py-3 px-0 px-lg-3 rounded" href="#" id="contact-me">Contact-me</a>
+              <a class="nav-item nav-link py-3 px-0 px-lg-3 rounded" href="#about" id="about-me">About-me</a>
+              <a class="nav-item nav-link py-3 px-0 px-lg-3 rounded" href="#portfolioitem" id="portfolio">Portfolio</a>
+              <a class="nav-item nav-link py-3 px-0 px-lg-3 rounded" href="#contactForm" id="contact-me">Contact-me</a>
             </div>
           </div>
         </nav>
-        <header class="header bg-primary text-white text-center">
+        <header class="header bg-danger text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 
-                <img class="header-avatar mb-5" src="" alt="" />
+                <img class="header-avatar mb-5" src="{{asset('images/header.jpg')}}" alt="" />
                 
                 <h1 class="header-heading text-uppercase mb-0">Danat Bekkaiyr</h1>
                 
                 <div class="divider light">
                     <div class="line"></div>
-                    <div class="icon"><i class="fas fa-star"></i></div>
+                    <div class="icon"><i class="fas fa-star" style="color: gold;"></i></div>
                     <div class="line"></div>
                 </div>
                 
                 <p class="header-subheading font-weight-light mb-0">SDU - IS - future programmer</p>
             </div>
         </header>
-
-        <section class="about-me text-black mb-0" id="about">
+    <div id="about">
+        <section class="about-me text-black mb-0">
             <div class="container">
 
                 <h2 class="page-section-heading text-center text-uppercase text-black">About me</h2>
 
                 <div class="divider light">
                     <div class="line" ></div>
-                    <div class="icon" ><i class="fas fa-star"></i></div>
+                    <div class="icon" ><i class="fas fa-star" style="color: gold;"></i></div>
                     <div class="line" ></div>
                 </div>
 
@@ -59,13 +59,14 @@
                 also I love playing volleyball , in 2018 we have won the city championship with my team. All I want now is study well and become professional at my job.</p></div>
             </div>
         </section>
+    </div>
 
         <section class="portfolio">
-            <div class="container">
-                <h2 class="heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <div class="container" id="portfolioitem">
+                <h2 class="heading text-center text-uppercase mb-0">Portfolio</h2>
                 <div class="divider light">
                     <div class="line"></div>
-                    <div class="icon"><i class="fas fa-star"></i></div>
+                    <div class="icon"><i class="fas fa-star" style="color: gold;"></i></div>
                     <div class="line"></div>
                 </div>
 
@@ -145,7 +146,7 @@
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
                                <div class="divider light">
                     <div class="line"></div>
-                    <div class="icon"><i class="fas fa-star"></i></div>
+                    <div class="icon"><i class="fas fa-star" style="color: gold;"></i></div>
                     <div class="line"></div>
                 </div>
               
@@ -195,12 +196,9 @@
     </body>
 
 <style>
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 html {
+    scroll-behavior: smooth;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -261,7 +259,7 @@ img {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: #2c3e50;
+  background-color: black;
   border-radius: 1rem;
   border-color: #2c3e50 !important;
 }
@@ -279,7 +277,7 @@ img {
 #nav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #2B3856;
+  background-color: black;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
 }
