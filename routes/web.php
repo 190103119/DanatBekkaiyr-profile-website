@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\DB;
+use App\Models\Post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +24,14 @@ Route::get('/profile', function () {
 Route::get('/user-test', function () {
     return view('user');
 });
+
+Route::get('post/create', function(){
+    DB::table('post')->insert([
+       'tittle' => 'Danat Bekkaiyr',
+       'body' => 'I am Danat Bekkaiyr , second course of Suleiman Demirel University , major is IT. Has ended Aksay BIL in 2019. I have a lot of hobbies like doing sports , music , reading books , watching movies and etc.'
+    ]);
+});
+Route::get('post', function(){
+    $post=Post::find(1);
+    return $post->body;
+ });
